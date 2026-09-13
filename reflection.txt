@@ -1,0 +1,8 @@
+1. C vs Python
+    In python, when you write x=42, it stores that value in variable x and handles the memeory allocation on its own.. 
+    From what I understand, in python lists, Python hadles everything behind the scenes. In C, you have to manually handle memory with malloc() and free said memory with free().
+    A systems programmer would need to understand memory segments so that we can check performance. A python developer uses a garbage collector to manage memory.
+2. Memory Organization
+    I observed that as we go deeper into the stacks, there is less memory allocated.
+    It seems that the stack and data segments are automatically allocated. And the heap allocation needs dynamic memory allocation. 
+    Understanding where these variables live help explain variable lifetime and scope. Stacks are limited and go away eventually, while heaps exist longer until freed.
